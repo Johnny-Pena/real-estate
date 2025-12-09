@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Typography improvements for better legibility */
+:root {
+  /* base = 16px on small screens, 18px on desktop for easier reading */
+  font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+  :root { 
+    font-size: 18px; 
+  }
+}
+
+/* Make text rendering crisper */
+html { 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+}
+

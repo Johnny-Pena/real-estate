@@ -1,0 +1,53 @@
+import { lazy, Suspense } from "react";
+
+// Lazy load non-critical components to improve initial load time
+const AptTrustBadges = lazy(() => import("../components/sections/ApartmentLandingPage/AptTrustBadges"));
+const AptHeroWithForm = lazy(() => import("../components/sections/ApartmentLandingPage/AptHeroWithForm"));
+const AptTestimonialSnippets = lazy(() => import("../components/sections/ApartmentLandingPage/AptTestimonialSnippets"));
+const PricingCard = lazy(() => import("../components/cards/pricingCard"));
+const AptPhoneCTA = lazy(() => import("../components/sections/ApartmentLandingPage/AptPhoneCTA"));
+const FAQ = lazy(() => import("../components/FAQ"));
+
+export const meta = () => {
+  return [
+    { title: "Virtual Guitar Lessons with Suzuki Teacher Johnny Peña | Free Trial | Arco Melody" },
+    { name: "description", content: "Learn guitar online with Johnny Peña. 15+ years experience, personalized curriculum, flexible scheduling. FREE 20-minute trial lesson - no experience needed!" },
+    { name: "keywords", content: "virtual guitar lessons, online guitar teacher, Suzuki method guitar, Johnny Peña guitar teacher, beginner guitar lessons, adult guitar lessons, guitar lessons for kids" },
+    { property: "og:title", content: "Virtual Guitar Lessons with Expert Teacher | Free Trial" },
+    { property: "og:description", content: "Master the guitar from home with Johnny Peña. Personalized instruction for all ages. Book your FREE trial lesson today!" },
+    { property: "og:image", content: "/images/johnny-headshot-1024.webp" },
+    { property: "og:url", content: "https://arcomelody.com/guitar-lessons" },
+    { rel: "canonical", href: "https://arcomelody.com/guitar-lessons" }
+  ];
+};
+
+  
+export default function GuitarLessons() {
+    return (
+        <>
+            <div className="flex flex-col items-center justify-center bg-base-200 mt-1 px-4 w-full">
+            <Suspense fallback={<div className="w-full h-48 animate-pulse bg-base-300 rounded-lg mb-4"></div>}>
+                <AptHeroWithForm />
+            </Suspense>
+            
+            <Suspense fallback={<div className="w-full h-48 animate-pulse bg-base-300 rounded-lg mb-4"></div>}>
+                <AptTrustBadges />
+            </Suspense>
+
+            {/* Lazy load below-the-fold components */}
+            <Suspense fallback={<div className="w-full h-32 animate-pulse bg-base-300 rounded-lg"></div>}>
+                <AptTestimonialSnippets />
+            </Suspense>
+
+            {/* Phone CTA for additional lead conversion after pricing */}
+            <Suspense fallback={<div className="w-full h-32 animate-pulse bg-base-300 rounded-lg"></div>}>
+                <AptPhoneCTA />
+            </Suspense>
+            
+            <Suspense fallback={<div className="w-full h-64 animate-pulse bg-base-300 rounded-lg"></div>}>
+                <FAQ />
+            </Suspense>
+        </div>
+        </>
+    );
+}
