@@ -2,7 +2,7 @@
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function AptInterestForm() {
-  const [state, handleSubmit] = useForm("movyadov");
+  const [state, handleSubmit] = useForm("mblnpaoq");
 
   if (state.succeeded) {
     return <p className="alert alert-success text-center text-2xl text-white mt-4 font-bold">Thanks! We'll send your personalized apartment list within 24 hours and coordinate your tours. 🏡</p>;

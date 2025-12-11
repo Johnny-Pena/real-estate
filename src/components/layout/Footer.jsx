@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center">
 
           <p className="text-lg text-center"><strong>Johnny Peña</strong> — License ID #764641</p>
-          <p className="text-xs mt-4 text-muted text-center">Office hours: Mon–Fri 9:00am–5:00pm</p>
+          <p className="text-xs mt-4 text-muted text-center">Office hours: <br /> Mon–Fri 9:00am–5:00pm</p>
         </div>
 
         {/* Disclosures Column */}
@@ -32,7 +32,7 @@ export default function Footer() {
           <ul className="flex flex-col gap-1">
             <li>
               <a
-                href="/documents/DASHREALTY_Information_about_Brokerage_Services_Iabs_20211108T110727%20(1).pdf"
+                href="/documents/IABS-1-2(Dash).pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link link-primary text-sm underline"

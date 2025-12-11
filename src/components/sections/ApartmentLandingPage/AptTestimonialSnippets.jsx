@@ -1,5 +1,4 @@
 import React from 'react';
-import AptInterestForm from './AptInterestForm';
                          
 const AptTestimonialSnippets = () => {
   const trustReasons = [
@@ -51,7 +50,17 @@ const AptTestimonialSnippets = () => {
           <h2 className="text-2xl font-bold text-center mb-12">Ready to find your perfect apartment?</h2>
 
           <div className="max-w-2xl mx-auto">
-            <AptInterestForm />
+            <button 
+              onClick={() => {
+                const formElement = document.getElementById('apartment-form');
+                if (formElement) {
+                  formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }} 
+              className="btn btn-primary btn-lg"
+            >
+              Get Started - Find Your Apartment
+            </button>
           </div>
         </div>
       </div>

@@ -173,7 +173,7 @@ export default function AptDynamicForm() {
   }
 
   return (
-    <div className="w-full flex justify-center py-6 bg-base-200 px-4">
+    <div id="apartment-form" className="w-full flex justify-center py-6 bg-base-200 px-4">
       <div className="card bg-base-100 w-full max-w-lg p-8 rounded-xl shadow-lg">
         <h2 className="text-2xl font-bold mb-2 text-center">Find Your Perfect Apartment</h2>
         <p className="text-sm opacity-70 mb-8 text-center">We'll create a personalized list just for you</p>
