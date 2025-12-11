@@ -5,15 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/images/city-svgrepo-com.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Preload critical resources for faster loading -->
-    <link rel="preload" href="/images/jenny-downtown-2025-512.webp" as="image" type="image/webp" />
-    <!-- Preload smallest YouTube thumbnail for fastest LCP -->
-    <link rel="preload" href="/images/youtube-video-preview-256.webp" as="image" type="image/webp" />
     
     <!-- Preconnect to critical external domains only -->
-    <link rel="dns-prefetch" href="https://app.acuityscheduling.com" />
-    <link rel="dns-prefetch" href="https://embed.acuityscheduling.com" />
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <title>Johnny Peña - Apartments</title>
     <meta name="description" content="Find your perfect apartment with Johnny Peña. Explore listings, schedule tours, and get personalized assistance. Start your apartment search today!">
     <meta name="keywords" content="apartments, real estate, Johnny Peña, apartment listings, schedule tours, rental assistance">
@@ -22,57 +15,42 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Johnny Peña - Apartments">
     <meta property="og:description" content="Find your perfect apartment with Johnny Peña. Explore listings, schedule tours, and get personalized assistance. Start your apartment search today!">
-    <meta property="og:image" content="/images/jennyDowntownAustin.jpg">
-    <meta property="og:url" content="https://arcomelody.com">
+    <meta property="og:image" content="/images/johnny-headshot2-192x192(1).jpg">
+    <meta property="og:url" content="https://johnnypenahomes.com">
     <meta property="og:type" content="website">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MusicSchool",
-      "name": "Arco Melody",
-      "description": "Virtual violin, viola, guitar, and ukulele lessons",
-      "url": "https://arcomelody.com",
-      "telephone": "Contact through website",
+      "@type": "RealEstateAgent",
+      "name": "Johnny Peña",
+      "description": "Licensed Real Estate Agent specializing in apartment locating services in Austin, Texas",
+      "url": "https://johnnypenahomes.com",
+      "telephone": "(956) 337-1393",
+      "email": "hello@dashrealty.com",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "13276 Research Blvd, Suite #107",
         "addressLocality": "Austin",
         "addressRegion": "TX",
+        "postalCode": "78750",
         "addressCountry": "US"
       },
-      "offers": {
+      "areaServed": {
+        "@type": "City",
+        "name": "Austin",
+        "state": "Texas"
+      },
+      "makesOffer": {
         "@type": "Offer",
-        "description": "Free 20-minute trial lesson"
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Free Apartment Locating Service",
+          "description": "Personalized apartment search and tour coordination at no cost to renters"
+        }
       }
     }
-    </script>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WXPY9PSN4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      window.gtag = gtag;  // Make gtag globally available
-      gtag('js', new Date());
-
-      // Configure with cross-domain tracking for Acuity Scheduling
-      gtag('config', 'G-5WXPY9PSN4', {
-        send_page_view: false,  // Disabled for SPA - we'll track manually
-        linker: {
-          domains: [
-            'arcomelody.com',
-            'arcomelody.pages.dev',
-            'app.acuityscheduling.com',
-            'embed.acuityscheduling.com'
-          ],
-          accept_incoming: true
-        },
-        allow_google_signals: true,
-        cookie_flags: 'SameSite=None;Secure'
-      });
-
-      // Configure Google Ads conversion tracking (required on every page)
-      gtag('config', 'AW-17649907971');
     </script>
 
   </head>
