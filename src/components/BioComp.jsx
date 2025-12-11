@@ -5,62 +5,12 @@ export default function BioComp() {
   return (
     <>
     <div className="flex flex-col items-center px-4">
-    <h1 className="text-center text-2xl font-bold mt-14 mb-6 md:text-5xl">Meet the Teachers</h1>
-
-    <div className="hero bg-base-100">
-      <div className="hero-content flex-col lg:flex-row max-w-6xl mx-auto px-4">
-        <img
-          src="/images/jenny-downtown-2025-512.webp"
-          srcSet="/images/jenny-downtown-2025-256.webp 256w, /images/jenny-downtown-2025-512.webp 512w, /images/jenny-downtown-2025-1024.webp 1024w"
-          sizes="(max-width: 640px) 100vw, 33vw"
-          className="w-full rounded-lg shadow-2xl sm:w-1/3"
-          alt="Jenny Peña with violin in downtown Austin"
-          loading="lazy"
-          width="512"
-          height="auto"
-        />
-        <div className="lg:ml-8 w-full">
-          <div className="flex flex-wrap items-center gap-2 mb-4">
-            <h3 className="text-xl sm:text-2xl font-bold w-full sm:w-auto mb-2 sm:mb-0">Jenny Peña</h3>
-            <div className="badge badge-primary text-md font-semibold">Suzuki-Registered</div>
-            <div className="badge badge-secondary text-md font-semibold">Bachelor of Music Degree</div>
-            <div className="badge badge-info text-md font-semibold">15+ Years</div>
-          </div>
-          <p className="text-lg font-semibold text-accent mb-3">
-            Violin & Viola • Ages 8-Adult
-          </p>
-          <div className="bg-base-200 p-4 rounded-lg mb-4">
-            <p className="text-sm italic">
-              💬 "Carmen, adult: 'Like alway I enjoy and learning new way to improve myself in learning the violin!! Love my teacher!!'
-            </p>
-          </div>
-          <p className="py-3">
-            Jenny Peña is a graduate of the University of Texas at San Antonio with a Bachelor’s degree in Music Education and a Suzuki-registered teacher since 2014. Jenny is a co-owner of a virtual music school, Arco Melody LLC. She opened Arco Melody with her husband, Johnny Peña, in November 2024.
-          </p>
-          <p className="py-3">
-            She began playing the violin at the age of 7 through an after-school violin program at a local church in Laredo, TX. She continued to play violin throughout her middle and highschool years in her school's orchestra programs. Jenny once taught as a public school Elementary Music with Northside ISD in San Antonio, TX. She was in charge of teaching general music class to Kinder – 5 th grade students on campus and an after-school 5th-grade strings program.
-          </p>
-          <p className="py-3">
-            She performs professionally around the Austin area with community orchestras and her violin/ duo with her husband, Duo Peña. Her professional associations include being a member of the Texas Music Educators Association and the Suzuki Association of the Americas.
-          </p>
-          <p className="py-3">
-            Jenny has had the incredible opportunity to perform alongside world-renowned Mariachi Vargas de Tecalitlan on multiple occasions. She also had the opportunity to be a part of Rachel Podgers’, internationally renowned Baroque Violinist, residency at UTSA in2016. She took a master class and performed in various ensembles with Ms. Podger.
-          </p>
-          <p className="py-3">
-            It is Jenny’s goal to continue to provide high-quality music instruction to her students through private instruction. She believes that everyone should have the opportunity to create beautiful music from the comfort of their own homes with virtual music lessons.
-          </p>
-          <Link to="/first-lesson" className="btn btn-primary btn-lg mt-6">Book Free Trial with Jenny</Link>
-        </div>
-      </div>
-    </div>
-
-    <div className="divider"></div> 
-
+    <h1 className="text-center text-2xl font-bold mt-14 mb-6 md:text-5xl">Meet your real estate agent</h1>
+    
     <div className="hero bg-base-100 mb-6">
     <div className="hero-content flex-col lg:flex-row max-w-6xl mx-auto px-4">
       <img
-        src="/images/johnny-pena-headshot-512.webp"
-        srcSet="/images/johnny-pena-headshot-256.webp 256w, /images/johnny-pena-headshot-512.webp 512w, /images/johnny-pena-headshot-1024.webp 1024w"
+        src="/images/johnny-real-estate-headshot2.jpg"
         sizes="(max-width: 640px) 100vw, 33vw"
         className="w-full rounded-lg shadow-2xl sm:w-1/3"
         alt="Johnny Peña with classical guitar"
@@ -84,14 +34,11 @@ export default function BioComp() {
           </p>
         </div>
         <p className="py-6">
-        Johnny Peña has been a music educator for the last 15 years and has taught private guitar instruction, guitar ensemble, guitar literature, music theory, and guitar pedagogy. He has been on faculty at two Universities: The University of Texas of San Antonio (2018-2022) and Baptist University of the Americas (2016-2018) as a lecturer of guitar. He received a Master of Music Degree in Guitar Performance from UTSA under the direction of Dr. Matthew Dunne in December 2014.
+        Johnny Peña is a licensed real estate agent with Dash Realty in Austin, Texas (License ID #764641), helping buyers and sellers across the Austin area since 2021. Before getting into real estate, Johnny has spent 15+ years as a music educator and performer, teaching guitar and holding faculty positions at Baptist University of the Americas and the University of Texas at San Antonio. He also earned his Master of Music in Guitar Performance from UTSA in 2014.
         </p>
-        <p>Johnny has participated in many international guitar competitions where he has earned 1st prize from the Mountain View College Festival and Competition (2018) and 3rd prize from the Lone Star Guitar Festival and Competition (2017). He has also had master classes with many world class guitarists including David Russell, Berta Rojas, Xuefei Yang, Adam Holzman, Fabio Montomoli, Bill Kannengiser, and more. One of his favorite performances includes being invited to perform the “Concierto de Aranjuez” at the Majestic Theatre with Symphony Viva in November 2021.
+        <p>The skills he has developed through teaching and performing — clear communication, patience, attention to detail, and creative problem-solving — now shape the way he supports his clients through every step of a real estate transaction. Outside of real estate, Johnny continues to compose and record original music under the name Key Mosaic.
         </p>  
-        <p className="py-6">
-        Johnny has recently begun a solo music project in which he releases original music under the artist name, “Key Mosaic.” His music features both classical and electric guitars. He enjoys blending classical and contemporary styles to create his music.
-        </p>
-        <Link to="/first-lesson" className="btn btn-primary btn-lg mt-6">Book Free Trial with Johnny</Link>
+        <Link to="/apartments" className="btn btn-primary btn-lg mt-6">Start your apartment search</Link>
       </div>
     </div>
     </div>

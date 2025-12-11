@@ -2,26 +2,26 @@ import React from 'react';
 
 const customerReviews = [
   {
-    name: 'Aru',
-    review: 'Jenny is an amazing teacher, she is very patient and always give constructive feedback that helps us to understand where we can improve upon.',
+    name: 'Lorem Ipsum',
+    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
   {
-    name: 'Rosalinda',
-    review: `Mr. Pena is not only an amazing teacher but also a gifted musician. He is very kind, friendly and has been great at assessing our son's interests to continuously keep him motivated. We highly recommend him!`,
+    name: 'Dolor Sit',
+    review: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
   {
-    name: 'Ana',
-    review: 'Jenny is great! Such a fun and productive lesson!',
+    name: 'Amet Consectetur',
+    review: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
   {
-    name: 'Ximena',
-    review: `Mr. Johnny’s teaching style and patience have made learning the guitar a fun and enjoyable experience for my daughter Sofia. She looked forward to her lessons each week and has shown significant progress in her skills. His dedication to nurturing a love for music in children truly shines through his lessons.`,
+    name: 'Adipiscing Elit',
+    review: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   }

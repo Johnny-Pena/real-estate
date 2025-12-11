@@ -33,7 +33,7 @@ export default function LocatingHero() {
                   {/* Instructor Photo */}
   <div className="w-full mb-4 flex justify-center">
             <img
-              src="/images/johnny-pena-headshot-1024.webp"
+              src="/images/johnny-headshot2-192x192(1).jpg"
               className="w-48 max-w-xs lg:w-56 lg:max-w-sm rounded-lg shadow-2xl"
               alt="Johnny Peña - Professional Guitar Teacher with guitar in Austin, Texas"
               loading="eager"

@@ -162,7 +162,7 @@ export default function AptDynamicForm() {
           <h3 className="text-2xl font-bold mb-2">Thanks — request received!</h3>
           <p className="mb-4">
             We'll reach out within 24 hours to schedule tours and deliver your tailored apartment list. If you need something sooner, email{" "}
-            <a href="mailto:info@arcomelody.com" className="link link-primary">
+            <a href="mailto:info@arcomelody.com" className="link link-nuetral">
               info@arcomelody.com
             </a>
             .
@@ -248,7 +248,7 @@ export default function AptDynamicForm() {
             </div>
 
             <div className="flex justify-end gap-3 mt-6">
-              <button onClick={next} className="btn btn-primary btn-block">
+              <button onClick={next} className="btn btn-accent btn-block">
                 Continue
               </button>
             </div>
@@ -266,7 +266,7 @@ export default function AptDynamicForm() {
               </label>
               <div className="space-y-4">
                 <div className="text-center">
-                  <p className="text-2xl font-bold text-primary">{data.budget || getBudgetRange(data.budgetSlider).display}</p>
+                  <p className="text-2xl font-bold text-nuetral">{data.budget || getBudgetRange(data.budgetSlider).display}</p>
                   <p className="text-xs opacity-60 mt-1">Slide to adjust your budget range</p>
                 </div>
                 <input 
@@ -276,7 +276,7 @@ export default function AptDynamicForm() {
                   step={50}
                   value={data.budgetSlider}
                   onChange={(e) => handleBudgetSliderChange(e.target.value)}
-                  className="range range-primary w-full" 
+                  className="range range-neutral w-full" 
                 />
                 <div className="flex justify-between text-xs opacity-60 px-1">
                   <span>$900</span>
@@ -304,7 +304,7 @@ export default function AptDynamicForm() {
               <button onClick={back} className="btn btn-ghost">
                 Back
               </button>
-              <button onClick={next} className="btn btn-primary flex-1">
+              <button onClick={next} className="btn btn-accent flex-1">
                 Continue
               </button>
             </div>
@@ -326,7 +326,7 @@ export default function AptDynamicForm() {
                     key={b}
                     type="button"
                     onClick={() => update("bedrooms", b)}
-                    className={`btn ${data.bedrooms === b ? "btn-primary" : "btn-outline"}`}
+                    className={`btn ${data.bedrooms === b ? "btn-secondary" : "btn-outline"}`}
                   >
                     {b}
                   </button>
@@ -345,7 +345,7 @@ export default function AptDynamicForm() {
                     key={b}
                     type="button"
                     onClick={() => update("bathrooms", b)}
-                    className={`btn ${data.bathrooms === b ? "btn-primary" : "btn-outline"}`}
+                    className={`btn ${data.bathrooms === b ? "btn-secondary" : "btn-outline"}`}
                   >
                     {b}
                   </button>
@@ -364,7 +364,7 @@ export default function AptDynamicForm() {
                     key={n}
                     type="button"
                     onClick={() => toggleArrayField("neighborhoods", n)}
-                    className={`btn btn-sm ${data.neighborhoods.includes(n) ? "btn-primary" : "btn-outline"}`}
+                    className={`btn btn-sm ${data.neighborhoods.includes(n) ? "btn-secondary" : "btn-outline"}`}
                   >
                     {n}
                   </button>
@@ -376,7 +376,7 @@ export default function AptDynamicForm() {
               <button onClick={back} className="btn btn-ghost">
                 Back
               </button>
-              <button onClick={next} className="btn btn-primary flex-1">
+              <button onClick={next} className="btn btn-accent flex-1">
                 Continue
               </button>
             </div>
@@ -435,7 +435,7 @@ export default function AptDynamicForm() {
                     const next = { ...data, pets: false, petType: "" };
                     save(next);
                   }}
-                  className={`btn ${!data.pets ? "btn-primary" : "btn-outline"}`}
+                  className={`btn ${!data.pets ? "btn-secondary" : "btn-outline"}`}
                 >
                   No pets
                 </button>
@@ -445,7 +445,7 @@ export default function AptDynamicForm() {
                     const next = { ...data, pets: true };
                     save(next);
                   }}
-                  className={`btn ${data.pets ? "btn-primary" : "btn-outline"}`}
+                  className={`btn ${data.pets ? "btn-secondary" : "btn-outline"}`}
                 >
                   Yes, I have pets
                 </button>
@@ -472,7 +472,7 @@ export default function AptDynamicForm() {
               <button onClick={back} className="btn btn-ghost">
                 Back
               </button>
-              <button onClick={next} className="btn btn-primary flex-1">
+              <button onClick={next} className="btn btn-accent flex-1">
                 Continue
               </button>
             </div>
@@ -495,7 +495,7 @@ export default function AptDynamicForm() {
                     const next = { ...data, hasCreditIssues: false, creditIssuesSummary: "" };
                     save(next);
                   }}
-                  className={`btn ${!data.hasCreditIssues ? "btn-primary" : "btn-outline"}`}
+                  className={`btn ${!data.hasCreditIssues ? "btn-secondary" : "btn-outline"}`}
                 >
                   No
                 </button>
@@ -505,7 +505,7 @@ export default function AptDynamicForm() {
                     const next = { ...data, hasCreditIssues: true };
                     save(next);
                   }}
-                  className={`btn ${data.hasCreditIssues ? "btn-primary" : "btn-outline"}`}
+                  className={`btn ${data.hasCreditIssues ? "btn-secondary" : "btn-outline"}`}
                 >
                   Yes
                 </button>
@@ -539,7 +539,7 @@ export default function AptDynamicForm() {
                     const next = { ...data, hasCriminalRecord: false, criminalRecordSummary: "" };
                     save(next);
                   }}
-                  className={`btn ${!data.hasCriminalRecord ? "btn-primary" : "btn-outline"}`}
+                  className={`btn ${!data.hasCriminalRecord ? "btn-secondary" : "btn-outline"}`}
                 >
                   No
                 </button>
@@ -549,7 +549,7 @@ export default function AptDynamicForm() {
                     const next = { ...data, hasCriminalRecord: true };
                     save(next);
                   }}
-                  className={`btn ${data.hasCriminalRecord ? "btn-primary" : "btn-outline"}`}
+                  className={`btn ${data.hasCriminalRecord ? "btn-secondary" : "btn-outline"}`}
                 >
                   Yes
                 </button>
@@ -595,7 +595,7 @@ export default function AptDynamicForm() {
               <button onClick={back} className="btn btn-ghost">
                 Back
               </button>
-              <button onClick={next} className="btn btn-primary flex-1">
+              <button onClick={next} className="btn btn-accent flex-1">
                 Continue
               </button>
             </div>
@@ -611,7 +611,7 @@ export default function AptDynamicForm() {
               <div className="bg-base-200 p-4 rounded-lg">
                 <div className="flex justify-between items-center mb-3">
                   <h4 className="font-semibold text-sm">Contact Info</h4>
-                  <button onClick={() => goTo(1)} className="text-primary text-xs font-medium hover:underline">
+                  <button onClick={() => goTo(1)} className="text-nuetral text-xs font-medium hover:underline">
                     Edit
                   </button>
                 </div>
@@ -625,7 +625,7 @@ export default function AptDynamicForm() {
               <div className="bg-base-200 p-4 rounded-lg">
                 <div className="flex justify-between items-center mb-3">
                   <h4 className="font-semibold text-sm">Budget</h4>
-                  <button onClick={() => goTo(2)} className="text-primary text-xs font-medium hover:underline">
+                  <button onClick={() => goTo(2)} className="text-nuetral text-xs font-medium hover:underline">
                     Edit
                   </button>
                 </div>
@@ -637,7 +637,7 @@ export default function AptDynamicForm() {
               <div className="bg-base-200 p-4 rounded-lg">
                 <div className="flex justify-between items-center mb-3">
                   <h4 className="font-semibold text-sm">Apartment Details</h4>
-                  <button onClick={() => goTo(3)} className="text-primary text-xs font-medium hover:underline">
+                  <button onClick={() => goTo(3)} className="text-nuetral text-xs font-medium hover:underline">
                     Edit
                   </button>
                 </div>
@@ -651,7 +651,7 @@ export default function AptDynamicForm() {
               <div className="bg-base-200 p-4 rounded-lg">
                 <div className="flex justify-between items-center mb-3">
                   <h4 className="font-semibold text-sm">Timeline & Pets</h4>
-                  <button onClick={() => goTo(4)} className="text-primary text-xs font-medium hover:underline">
+                  <button onClick={() => goTo(4)} className="text-nuetral text-xs font-medium hover:underline">
                     Edit
                   </button>
                 </div>
@@ -664,7 +664,7 @@ export default function AptDynamicForm() {
               <div className="bg-base-200 p-4 rounded-lg">
                 <div className="flex justify-between items-center mb-3">
                   <h4 className="font-semibold text-sm">Background Information</h4>
-                  <button onClick={() => goTo(5)} className="text-primary text-xs font-medium hover:underline">
+                  <button onClick={() => goTo(5)} className="text-nuetral text-xs font-medium hover:underline">
                     Edit
                   </button>
                 </div>
@@ -701,13 +701,13 @@ export default function AptDynamicForm() {
               <label className="label cursor-pointer justify-start gap-3">
                 <input
                   type="checkbox"
-                  className="checkbox checkbox-primary"
+                  className="checkbox checkbox-secondary"
                   checked={data.consent}
                   onChange={(e) => update("consent", e.target.checked)}
                 />
                 <span className="label-text text-xs">
                   I agree to be contacted about apartment services. See{" "}
-                  <a href="/privacy-policy" className="link link-primary" target="_blank" rel="noopener noreferrer">
+                  <a href="/privacy-policy" className="link link-nuetral" target="_blank" rel="noopener noreferrer">
                     Privacy Policy
                   </a>
                   .
@@ -742,7 +742,7 @@ export default function AptDynamicForm() {
                 <button type="button" onClick={back} className="btn btn-ghost">
                   Back
                 </button>
-                <button type="submit" className="btn btn-primary flex-1" disabled={state.submitting}>
+                <button type="submit" className="btn btn-accent flex-1" disabled={state.submitting}>
                   {state.submitting ? "Submitting..." : "Submit Request"}
                 </button>
               </div>

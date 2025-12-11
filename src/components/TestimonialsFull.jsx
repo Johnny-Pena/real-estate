@@ -2,56 +2,56 @@ import React from 'react';
 
 const customerReviews = [
   {
-    name: 'Aru',
-    review: 'Jenny is an amazing teacher, she is very patient and always give constructive feedback that helps us to understand where we can improve upon.',
+    name: 'Lorem Ipsum',
+    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
   {
-    name: 'Rosalinda',
-    review: `Mr. Pena is not only an amazing teacher but also a gifted musician. He is very kind, friendly and has been great at assessing our son's interests to continuously keep him motivated. We highly recommend him!`,
+    name: 'Dolor Sit',
+    review: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
   {
-    name: 'Ana',
-    review: 'Jenny is great! Such a fun and productive lesson!',
+    name: 'Amet Consectetur',
+    review: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
   {
-    name: 'Ximena',
-    review: `Mr. Johnny’s teaching style and patience have made learning the guitar a fun and enjoyable experience for my daughter Sofia. She looked forward to her lessons each week and has shown significant progress in her skills. His dedication to nurturing a love for music in children truly shines through his lessons.`,
+    name: 'Adipiscing Elit',
+    review: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
   {
-    name: 'Carmen',
-    review: ' Like alway I enjoy and learning new way to improve myself in learning the violin!! Love my teacher!!',
+    name: 'Magna Aliqua',
+    review: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
   {
-    name: 'Paulo',
-    review: 'having great coaches (trainers) to teaching you on how to learn in easy steps and making it fun at the same time, makes the biggest difference. Because I do think some do have a hard time learning and when they do they give up and quit. But when your trainer is showing you the tricks and talents that they posses, it makes it fun to learn. Thank you Jen (Trainer) and Trala.',
+    name: 'Ullamco Laboris',
+    review: 'Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
-    {
-    name: 'Sandra',
-    review: 'Our teacher, Jenny, is a wonderful person, very kind and patient',
+  {
+    name: 'Nostrud Exercitation',
+    review: 'Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
-    {
-    name: 'Kyshia',
-    review: 'I love taking violin lessons',
+  {
+    name: 'Commodo Pharetra',
+    review: 'Integer in mauris eu nibh euismod gravida.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   },
-   {
-    name: 'Carmen',
-    review: 'I love my class and my teacher',
+  {
+    name: 'Bibendum Elit',
+    review: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
     extraContent: '(review provided from another platform)',
     stars: 5,
   }

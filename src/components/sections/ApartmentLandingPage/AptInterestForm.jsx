@@ -42,7 +42,7 @@ export default function AptInterestForm() {
             for more details.
           </p>
 
-          <button type="submit" className="btn btn-primary w-full text-xl font-bold" disabled={state.submitting}>
+          <button type="submit" className="btn btn-accent w-full text-xl font-bold" disabled={state.submitting}>
             Submit
           </button>
         </form>
