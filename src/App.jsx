@@ -3,7 +3,6 @@ import './App.css';
 import './index.css';
 import Navbar from './components/layout/Navbar.jsx';
 import Footer from './components/layout/Footer.jsx';
-import Index from './routes/index.jsx';
 import Bio from './routes/bio.jsx';
 import Contact from './routes/contact.jsx';
 import AnalyticsTracker from './components/AnalyticsTracker.jsx';
@@ -23,7 +22,7 @@ function App() {
       <Route path="/" element={<Apartments />} />
       <Route path="/bio" element={<Bio />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/testimonials" element={<TestimonialsPage />} />
+      {/*<Route path="/testimonials" element={<TestimonialsPage />} />*/}
       <Route path="/apartments" element={<Apartments />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
