@@ -1,6 +1,4 @@
 import Hero from "../components/sections/Hero";
-import TrustBadges from "../components/sections/TrustBadges";
-import TestimonialSnippets from "../components/sections/TestimonialSnippets";
 
 export const meta = () => {
   return [
@@ -20,8 +18,6 @@ export default function Index() {
   return (
     <div>
       <Hero />
-      <TrustBadges />
-      <TestimonialSnippets />
     </div>
   );
 }

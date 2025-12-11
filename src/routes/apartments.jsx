@@ -4,7 +4,7 @@ import { lazy, Suspense } from "react";
 const AptTrustBadges = lazy(() => import("../components/sections/ApartmentLandingPage/AptTrustBadges"));
 const AptHeroWithForm = lazy(() => import("../components/sections/ApartmentLandingPage/AptHeroWithForm"));
 const AptTestimonialSnippets = lazy(() => import("../components/sections/ApartmentLandingPage/AptTestimonialSnippets"));
-const PricingCard = lazy(() => import("../components/cards/pricingCard"));
+
 const AptPhoneCTA = lazy(() => import("../components/sections/ApartmentLandingPage/AptPhoneCTA"));
 const FAQ = lazy(() => import("../components/FAQ"));
 
@@ -22,7 +22,7 @@ export const meta = () => {
 };
 
   
-export default function GuitarLessons() {
+export default function Apartments() {
     return (
         <>
             <div className="flex flex-col items-center justify-center bg-base-200 mt-1 px-4 w-full">
