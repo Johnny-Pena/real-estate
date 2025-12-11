@@ -3,14 +3,14 @@ import TestimonialsFull from "../components/TestimonialsFull"
 
 export const meta = () => {
   return [
-    { title: "Arco Melody | Testimonials" },
-    { name: "description", content: "Discover music lessons with Arco Melody, where our teachers are professional musicians and experienced educators. Join us today and start your musical journey!" },
-    { name: "keywords", content: "Jenny Peña, Jenny Pena, violinist, violin teacher, Johnny Peña, Johnny Pena, guitarist, guitar teacher, professional violinist, professional guitarist, music achievements" },
-    { property: "og:title", content: "Arco Melody" },
-    { property: "og:description", content: "Discover music lessons with Arco Melody, where our teachers are professional musicians and experienced educators. Join us today and start your musical journey!" },
-    { property: "og:url", content: "https://arcomelody.com/testimonials" },
+    { title: "Client Testimonials - Johnny Peña Real Estate" },
+    { name: "description", content: "Read reviews from Austin renters who found their perfect apartment with Johnny Peña. Licensed real estate agent providing personalized, free apartment locating services." },
+    { name: "keywords", content: "Johnny Peña reviews, Austin apartment locating reviews, real estate testimonials, Dash Realty reviews" },
+    { property: "og:title", content: "Client Testimonials - Johnny Peña Real Estate" },
+    { property: "og:description", content: "See what Austin renters say about working with licensed real estate agent Johnny Peña for their apartment search." },
+    { property: "og:url", content: "https://johnnypenahomes.com/testimonials" },
     { property: "og:type", content: "website" },
-    { rel: "canonical", href: "https://arcomelody.com/testimonials" }
+    { rel: "canonical", href: "https://johnnypenahomes.com/testimonials" }
   ];
 };
 

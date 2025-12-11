@@ -2,15 +2,14 @@ import ContactForm from "../components/forms/Contactus";
 
 export const meta = () => {
     return [
-        { title: "Arco Melody | Contact Us" },
-        { name: "description", content: "Get in touch with Arco Melody. Contact us for violin lessons, guitar lesson, inquiries, and more." },
-        { name: "keywords", content: "Jenny Peña, Jenny Pena, violinist, violin teacher, Johnny Peña, Johnny Pena, guitarist, guitar teacher, professional violinist, professional guitarist, music achievements" },
-        { property: "og:title", content: "Arco Melody | Contact Us" },
-        { property: "og:description", content: "Get in touch with Arco Melody. Contact us for violin lessons, guitar lesson, inquiries, and more." },
-        { property: "og:image", content: "/assets/images/Arco-Melody-Logo(Music-is-Joy-No.1)40x40px" },
-        { property: "og:url", content: "https://arcomelody.com/contact" }, 
+        { title: "Contact Johnny Peña - Austin Real Estate Agent" },
+        { name: "description", content: "Get in touch with Johnny Peña for free apartment locating services in Austin, TX. Licensed real estate agent ready to help you find your perfect home." },
+        { name: "keywords", content: "contact Johnny Peña, Austin real estate agent, apartment locating Austin, Dash Realty contact" },
+        { property: "og:title", content: "Contact Johnny Peña - Real Estate Agent" },
+        { property: "og:description", content: "Reach out to licensed Austin real estate agent Johnny Peña for personalized apartment search assistance." },
+        { property: "og:url", content: "https://johnnypenahomes.com/contact" }, 
         { property: "og:type", content: "website" },
-        { rel: "canonical", href: "https://arcomelody.com/contact" }
+        { rel: "canonical", href: "https://johnnypenahomes.com/contact" }
     ];
     };
 

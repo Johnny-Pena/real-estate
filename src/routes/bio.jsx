@@ -2,15 +2,15 @@ import BioComp from '../components/BioComp';
 
 export const meta = () => {
   return [
-    { title: "Arco Melody | Bio" },
-    { name: "description", content: "Learn about Arco Melody, a virtual violin and guitar studio based in Texas. Explore our collaborative teaching style and join us on a musical journey." },
-    { name: "keywords", content: "Jenny Peña, Jenny Pena, violinist, violin teacher, Johnny Peña, Johnny Pena, guitarist, guitar teacher, professional violinist, professional guitarist, music achievements" },
-    { property: "og:title", content: "Arco Melody | Bio" },
-    { property: "og:description", content: "Learn about Arco Melody, a virtual violin and guitar studio based in Texas. Explore our collaborative teaching style and join us on a musical journey." },
-    { property: "og:image", content: "/assets/images/Jenny-Website-Grey.png" },
-    { property: "og:url", content: "https://arcomelody.com/bio" },
+    { title: "About Johnny Peña - Licensed Real Estate Agent in Austin, TX" },
+    { name: "description", content: "Meet Johnny Peña, a licensed Austin real estate agent with Dash Realty. Former music educator bringing exceptional communication and personalized service to apartment locating since 2021." },
+    { name: "keywords", content: "Johnny Peña bio, Johnny Pena Austin realtor, Dash Realty agent, Austin real estate agent, licensed Texas realtor" },
+    { property: "og:title", content: "About Johnny Peña - Austin Real Estate Agent" },
+    { property: "og:description", content: "Licensed real estate agent helping Austin renters find their perfect apartment. Bringing 15+ years of teaching experience to real estate." },
+    { property: "og:image", content: "/images/johnny-real-estate-headshot2.jpg" },
+    { property: "og:url", content: "https://johnnypenahomes.com/bio" },
     { property: "og:type", content: "website" },
-    { rel: "canonical", href: "https://arcomelody.com/bio" }
+    { rel: "canonical", href: "https://johnnypenahomes.com/bio" }
   ];
 };
 

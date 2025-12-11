@@ -2,15 +2,15 @@ import SignUpScript from '../components/forms/SignUpScript';
 
 export const meta = () => {
   return [
-    { title: "Arco Melody | Sign Up" },
-    { name: "description", content: "Sign up for music lessons with Arco Melody, where our teachers are professional musicians and experienced educators. Join us today and start your musical journey!" },
-    { name: "keywords", content: "Jenny Peña, Jenny Pena, violinist, violin teacher, Johnny Peña, Johnny Pena, guitarist, guitar teacher, professional violinist, professional guitarist, music achievements" },
-    { property: "og:title", content: "Arco Melody | Sign Up" },
-    { property: "og:description", content: "Sign up for music lessons with Arco Melody, where our teachers are professional musicians and experienced educators. Join us today and start your musical journey!" },
-    { property: "og:image", content: "/assets/images/Jenny-Website-Grey.png" },
-    { property: "og:url", content: "https://arcomelody.com/bio" },
+    { title: "Start Your Apartment Search - Johnny Peña Real Estate" },
+    { name: "description", content: "Begin your free apartment search with licensed Austin real estate agent Johnny Peña. Get personalized apartment recommendations and tour coordination at no cost." },
+    { name: "keywords", content: "apartment search signup, free apartment locating, Johnny Peña contact, Austin apartment finder" },
+    { property: "og:title", content: "Start Your Apartment Search - Johnny Peña" },
+    { property: "og:description", content: "Connect with licensed real estate agent Johnny Peña to find your perfect Austin apartment. Free personalized service." },
+    { property: "og:image", content: "/images/johnny-headshot2-192x192(1).jpg" },
+    { property: "og:url", content: "https://johnnypenahomes.com/signup" },
     { property: "og:type", content: "website" },
-    { rel: "canonical", href: "https://arcomelody.com/bio" }
+    { rel: "canonical", href: "https://johnnypenahomes.com/signup" }
   ];
 };
 

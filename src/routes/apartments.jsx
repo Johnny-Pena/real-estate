@@ -10,14 +10,14 @@ const FAQ = lazy(() => import("../components/FAQ"));
 
 export const meta = () => {
   return [
-    { title: "Virtual Guitar Lessons with Suzuki Teacher Johnny Peña | Free Trial | Arco Melody" },
-    { name: "description", content: "Learn guitar online with Johnny Peña. 15+ years experience, personalized curriculum, flexible scheduling. FREE 20-minute trial lesson - no experience needed!" },
-    { name: "keywords", content: "virtual guitar lessons, online guitar teacher, Suzuki method guitar, Johnny Peña guitar teacher, beginner guitar lessons, adult guitar lessons, guitar lessons for kids" },
-    { property: "og:title", content: "Virtual Guitar Lessons with Expert Teacher | Free Trial" },
-    { property: "og:description", content: "Master the guitar from home with Johnny Peña. Personalized instruction for all ages. Book your FREE trial lesson today!" },
-    { property: "og:image", content: "/images/johnny-headshot-1024.webp" },
-    { property: "og:url", content: "https://arcomelody.com/guitar-lessons" },
-    { rel: "canonical", href: "https://arcomelody.com/guitar-lessons" }
+    { title: "Apartment Locating Service in Austin, TX | Johnny Peña Real Estate" },
+    { name: "description", content: "Find your perfect Austin apartment with licensed real estate agent Johnny Peña. 100% FREE service - personalized lists, pet-friendly options, and tour coordination. Start your search today!" },
+    { name: "keywords", content: "Austin apartments, apartment locating service, free apartment finder, Austin rentals, Johnny Peña real estate, pet-friendly apartments Austin, apartment search Austin, Dash Realty" },
+    { property: "og:title", content: "Free Apartment Locating Service in Austin, TX | Johnny Peña" },
+    { property: "og:description", content: "Licensed real estate agent helping renters find their perfect Austin apartment at no cost. Personalized service, pet-friendly options, and tour coordination included." },
+    { property: "og:image", content: "/images/johnny-headshot2-192x192(1).jpg" },
+    { property: "og:url", content: "https://johnnypenahomes.com/apartments" },
+    { rel: "canonical", href: "https://johnnypenahomes.com/apartments" }
   ];
 };
 

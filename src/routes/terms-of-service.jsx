@@ -7,7 +7,7 @@ export const meta = () => [
   { property: "og:title", content: "Terms of Service | Dash Realty" },
   { property: "og:description", content: "Terms of Service for Dash Realty. Learn about our terms and conditions for using our services." },
   { property: "og:type", content: "website" },
-  { rel: "canonical", href: "https://dashrealty.com/terms-of-service" }
+  { rel: "canonical", href: "https://johnnypenahomes.com/terms-of-service" }
 ];
 
 export default function TermsOfService() {
