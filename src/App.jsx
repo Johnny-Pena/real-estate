@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import './App.css';
 import './index.css';
 import Navbar from './components/layout/Navbar.jsx';
@@ -11,9 +12,21 @@ import PrivacyPolicy from './routes/privacy-policy.jsx';
 import TermsOfService from './routes/terms-of-service.jsx';
 import Apartments from './routes/apartments.jsx';
 
+// Scroll to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
 <Router>
+  <ScrollToTop />
   <div>
   <AnalyticsTracker />
     {/* <MetaPixel /> */}

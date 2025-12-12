@@ -62,18 +62,20 @@ export default function Navbar() {
               <li role="menuitem"><Link to="/contact" className="text-xl font-bold">Contact</Link></li>
             </ul>
           </div>
-       <Link to="/apartments" className="btn btn-ghost text-xl flex items-center">
-        <span className="hidden sm:inline">Johnny Peña - Real Estate</span>
+       <Link to="/" className="btn btn-ghost text-xl flex items-center">
+        <img 
+          alt="Johnny Peña Real Estate Logo" 
+          className="w-20 h-20 sm:w-24 sm:h-24 object-contain" 
+          src="/images/Final-Logo.png"
+        />
+        <span className="hidden sm:inline ml-4">Johnny Peña Homes</span>
       </Link>
         </div>
         <div className="navbar-center hidden xl:flex">
           <ul className="menu menu-horizontal px-1 text-sm font-medium sm:text-lg" role="menubar">
             <li role="menuitem"><Link to="/apartments">Apartments</Link></li>
             <li role="menuitem"><Link to="/bio">Bio</Link></li>
-            {/*<li role="menuitem"><Link to="/testimonials">Testimonials</Link></li>*/}
-            <li role="menuitem" className="hidden">
-            <a href="https://shop.arcomelody.com" target="_blank" rel="noopener noreferrer">Merch</a>
-            </li>
+            {/*<li role="menuitem"><Link to="/testimonials">Testimonials</Link></li>*/}     
             <li role="menuitem"><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
