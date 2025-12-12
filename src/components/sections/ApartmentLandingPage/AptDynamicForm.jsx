@@ -163,7 +163,7 @@ export default function AptDynamicForm() {
           <p className="mb-4">
             We'll reach out within 24 hours to schedule tours and deliver your tailored apartment list. If you need something sooner, email{" "}
             <a href="mailto:info@arcomelody.com" className="link link-nuetral">
-              info@arcomelody.com
+              johnnypena512@gmail.com
             </a>
             .
           </p>
