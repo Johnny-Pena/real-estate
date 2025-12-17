@@ -52,40 +52,16 @@ export default function AptDynamicForm() {
     save(next);
   };
 
-  // Calculate budget range based on slider value
-  const getBudgetRange = (sliderValue) => {
-    const basePrice = parseInt(sliderValue);
-    let minPrice, maxPrice;
-    
-    if (basePrice < 1300) {
-      // $400 gap under $1300
-      minPrice = basePrice;
-      maxPrice = basePrice + 400;
-    } else if (basePrice < 1600) {
-      // $500 gap between $1300 and $1600
-      minPrice = basePrice;
-      maxPrice = basePrice + 500;
-    } else {
-      // $1000 gap over $1600
-      minPrice = basePrice;
-      maxPrice = basePrice + 1000;
-    }
-    
-    return { minPrice, maxPrice, display: `$${minPrice.toLocaleString()} - $${maxPrice.toLocaleString()}` };
-  };
-
   // Calculate required income (3x rent)
   const getRequiredIncome = (sliderValue) => {
-    const { minPrice, maxPrice } = getBudgetRange(sliderValue);
-    const minIncome = minPrice * 3;
-    const maxIncome = maxPrice * 3;
-    return { minIncome, maxIncome, display: `$${minIncome.toLocaleString()} - $${maxIncome.toLocaleString()}` };
+    const income = parseInt(sliderValue) * 3;
+    return { income, display: `$${income.toLocaleString()}` };
   };
 
   // Update budget string whenever slider changes
   const handleBudgetSliderChange = (value) => {
-    const { display } = getBudgetRange(value);
-    const next = { ...data, budgetSlider: parseInt(value), budget: display };
+    const budgetValue = parseInt(value);
+    const next = { ...data, budgetSlider: budgetValue, budget: `$${budgetValue.toLocaleString()}` };
     save(next);
   };
 
@@ -266,8 +242,10 @@ export default function AptDynamicForm() {
               </label>
               <div className="space-y-4">
                 <div className="text-center">
-                  <p className="text-2xl font-bold text-nuetral">{data.budget || getBudgetRange(data.budgetSlider).display}</p>
-                  <p className="text-xs opacity-60 mt-1">Slide to adjust your budget range</p>
+                  <p className="text-2xl font-bold text-nuetral">
+                    ${data.budgetSlider.toLocaleString()} <span className="font-normal">or less</span>
+                  </p>
+                  <p className="text-xs opacity-60 mt-1">Slide to adjust your budget</p>
                 </div>
                 <input 
                   type="range" 
@@ -290,9 +268,9 @@ export default function AptDynamicForm() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div className="flex-1">
-                      <p className="text-sm font-medium text-info-content">Required Monthly Income</p>
-                      <p className="text-lg font-bold text-info-content mt-1">{getRequiredIncome(data.budgetSlider).display}</p>
-                      <p className="text-xs opacity-70 mt-1">Most apartments require tenants to earn 3x the monthly rent</p>
+                      <p className="text-xs font-medium text-info-content">Estimated Monthly Income Requirement</p>
+                      <p className="text-md font-bold text-info-content mt-1">{getRequiredIncome(data.budgetSlider).display}</p>
+                      <p className="text-xs opacity-70 mt-1">Based on your max budget. Many apartments require about 3× the rent, but we can also look at lower-priced options or co-signer-friendly communities.</p>
                     </div>
                   </div>
                 </div>
@@ -485,8 +463,8 @@ export default function AptDynamicForm() {
             <h3 className="text-lg font-semibold mb-4">Background information</h3>
             
             <div className="form-control">
-              <label className="label">
-                <span className="label-text font-medium">Do you have broken leases, evictions, foreclosure, car-repos or any outstanding debts owed to properties or utility companies?</span>
+              <label className="label" style={{ whiteSpace: 'normal' }}>
+                <span className="label-text font-medium" style={{ whiteSpace: 'normal', lineHeight: '1.5' }}>Do you have broken leases, evictions, foreclosure, car-repos or any outstanding debts owed to properties or utility companies?</span>
               </label>
               <div className="grid grid-cols-2 gap-3">
                 <button
@@ -529,8 +507,8 @@ export default function AptDynamicForm() {
             )}
 
             <div className="form-control">
-              <label className="label">
-                <span className="label-text font-medium">Do you have any misdemeanors, felonies, or arrests that could show up on a criminal background check?</span>
+              <label className="label" style={{ whiteSpace: 'normal' }}>
+                <span className="label-text font-medium" style={{ whiteSpace: 'normal', lineHeight: '1.5' }}>Do you have any misdemeanors, felonies, or arrests that could show up on a criminal background check?</span>
               </label>
               <div className="grid grid-cols-2 gap-3">
                 <button
@@ -573,8 +551,8 @@ export default function AptDynamicForm() {
             )}
 
             <div className="form-control">
-              <label className="label">
-                <span className="label-text font-medium">Are you a US Citizen, a resident, or do you have work authorization?</span>
+              <label className="label" style={{ whiteSpace: 'normal' }}>
+                <span className="label-text font-medium" style={{ whiteSpace: 'normal', lineHeight: '1.5' }}>Are you a US Citizen, a resident, or do you have work authorization?</span>
               </label>
               <select
                 name="immigrationStatus"
@@ -698,7 +676,7 @@ export default function AptDynamicForm() {
             </div>
 
             <div className="form-control">
-              <label className="label cursor-pointer justify-start gap-3">
+              <label className="label cursor-pointer justify-start gap-3" style={{ whiteSpace: 'normal', lineHeight: '1.5' }}>
                 <input
                   type="checkbox"
                   className="checkbox checkbox-secondary"

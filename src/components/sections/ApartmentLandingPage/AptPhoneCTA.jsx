@@ -14,19 +14,19 @@ export default function AptPhoneCTA() {
           <a
             href="sms:+19563371393?body=Contacting Johnny about apartments."
             className="btn btn-primary btn-lg inline-flex items-center justify-center gap-2"
-            aria-label="Text Johnny at (956) 337-1393"
+            aria-label="Text Johnny at (512) 553 - 2099"
           >
             <span className="text-xl">💬</span>
             <span>Text Us</span>
           </a>
           
           <a
-            href="tel:+19563260627"
+            href="tel:+15125532099"
             className="btn btn-outline btn-lg inline-flex items-center justify-center gap-2"
-            aria-label="Call Johnny at (956) 337-1393"
+            aria-label="Call Johnny at (512) 553 - 2099"
           >
             <span className="text-xl">📞</span>
-            <span>Call (956) 337-1393</span>
+            <span>Call (512) 553 - 2099</span>
           </a>
         </div>
         <p className="text-xs opacity-60">Text response same day</p>
