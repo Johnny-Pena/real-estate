@@ -19,7 +19,7 @@ export default function LocatingHero() {
           
 
           {/* Description */}
-          <p className="text-base mb-3 lg:text-xl lg:mb-6">
+          <p className="hidden lg:block text-base mb-3 lg:text-xl lg:mb-6">
             I’m Johnny Peña with Dash Real Estate. I provide FREE apartment locating services, the individual apartment complexes cover my fee. I send the names of apartments, addresses,  websites, and photos. Plus I'll setup tours for you to see the apartments in person.
           </p>
           
